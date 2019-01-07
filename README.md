@@ -1,7 +1,10 @@
 # PHP-I Jan 2019
 
-## TODO:
-* Send VM instructions to Olawale @ olawaley2k@gmail.com
+## Homework
+
+## Class Notes
+
+## Q & A
 
 # VM Troubleshooting Guide
 
