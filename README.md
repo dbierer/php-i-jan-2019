@@ -1,10 +1,29 @@
 # PHP-I Jan 2019
 
 ## Homework
+* For Fri 11 Jan 2019
+  * First Assignment: create a simple PHP program under sandbox and run it in the browser
 
 ## Class Notes
+* Memory Considerations
+    * these considerations are only applicable within a single request cycle, where it's long running
+    * use `unset()` to remove a variable at runtime
+    * use `gc_collect_cycles()` to restore unset memory
+    * `php.ini` directives: http://php.net/manual/en/ini.list.php
+    * To override the memory limit temporarily:
+    ```
+    ini_set('memory_limit', '500M');
+```
+* PHP Documentor Project: https://phpdoc.org/
+* Composer is a package manager for 3rd party open source PHP libraries: https://getcomposer.org/
+* Composer draws from a repository of open source software: https://packagist.org/
+* To get a list of files in a directory: use the `glob()` function: http://php.net/manual/en/function.glob.php
 
 ## Q & A
+Q: Can you provide an example of a string holding non-string data?
+
+## ERRATA
+* file:///D:/Repos/PHP-Fundamentals-I/Course_Materials/index.html#/2/2: curly brace s/be on next line
 
 # VM Troubleshooting Guide
 
