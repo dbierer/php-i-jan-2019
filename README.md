@@ -1,8 +1,25 @@
 # PHP-I Jan 2019
 
+Left Off: file:///D:/Repos/PHP-Fundamentals-I/Course_Materials/index.html#/3/7
+
 ## Homework
+* For Mon 13 Jan 2019
+  * Module 3: Foundation
+      * Lab: The Mixed Array 1
+      * Lab: The Mixed Array 2
+      * Lab: The Multi Array
+      * Lab: The Multi Configuration Array
+      * Lab: First Program
+        * NOTE: use some of the different operators we've discussed to gain practice with them
+      * Lab: Additional Crew Members
+  * Module 4: Control Structures
+    * Lab: Conditional If
+    * Lab: Conditional If-Else Equality
+    * Lab: Conditional If-Else Exclusive OR
 * For Fri 11 Jan 2019
   * First Assignment: create a simple PHP program under sandbox and run it in the browser
+
+* Olawale: https://github.com/oadekoya12/zend-training.git
 
 ## Class Notes
 * Memory Considerations
@@ -18,6 +35,10 @@
 * Composer is a package manager for 3rd party open source PHP libraries: https://getcomposer.org/
 * Composer draws from a repository of open source software: https://packagist.org/
 * To get a list of files in a directory: use the `glob()` function: http://php.net/manual/en/function.glob.php
+* Bitwise Operators
+    * Read the docs: http://php.net/manual/en/language.operators.bitwise.php
+    * Go through the tutorial: https://www.w3resource.com/php/operators/bitwise-operators.php
+* PHP Examples: https://github.com/dbierer/classic_php_examples
 
 ## Q & A
 Q: Can you provide an example of a string holding non-string data?
