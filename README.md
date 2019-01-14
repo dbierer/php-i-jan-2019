@@ -1,9 +1,16 @@
 # PHP-I Jan 2019
 
-Left Off: file:///D:/Repos/PHP-Fundamentals-I/Course_Materials/index.html#/3/7
+file:///D:/Repos/PHP-Fundamentals-I/Course_Materials/index.html#/5
 
 ## Homework
-* For Mon 13 Jan 2019
+* For Tue 15 Jan 2019
+  * Lab: Conditional If-ElseIf
+  * Lab: Switch Construct
+  * Lab: Foreach Loop
+  * Lab: For Loop
+  * Lab: While Loop
+  * Lab: Do...While Loop
+* For Sun 13 Jan 2019
   * Module 3: Foundation
       * Lab: The Mixed Array 1
       * Lab: The Mixed Array 2
@@ -16,7 +23,7 @@ Left Off: file:///D:/Repos/PHP-Fundamentals-I/Course_Materials/index.html#/3/7
     * Lab: Conditional If
     * Lab: Conditional If-Else Equality
     * Lab: Conditional If-Else Exclusive OR
-* For Fri 11 Jan 2019
+* For Thu 10 Jan 2019
   * First Assignment: create a simple PHP program under sandbox and run it in the browser
 
 * Olawale: https://github.com/oadekoya12/zend-training.git
@@ -45,6 +52,7 @@ Q: Can you provide an example of a string holding non-string data?
 
 ## ERRATA
 * file:///D:/Repos/PHP-Fundamentals-I/Course_Materials/index.html#/2/2: curly brace s/be on next line
+* file:///D:/Repos/PHP-Fundamentals-I/Course_Materials/index.html#/4/29: s/be `$astronaut` on the 1st line
 
 # VM Troubleshooting Guide
 
