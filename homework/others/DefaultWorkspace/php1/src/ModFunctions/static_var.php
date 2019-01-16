@@ -5,5 +5,5 @@ function staticVar($arg = NULL) {
     $foo += $arg;
     return $foo;
 }
-echo staticVar(5) .'<br>';
+echo staticVar(5) .'<br/>';
 echo staticVar(10);
