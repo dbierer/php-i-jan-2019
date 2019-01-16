@@ -1,8 +1,17 @@
 # PHP-I Jan 2019
 
 file:///D:/Repos/PHP-Fundamentals-I/Course_Materials/index.html#/5
+## TODO:
+* Q: Do you have an example of using `static` to parse a directory tree?
+* A:
 
 ## Homework
+* For Thu 17 Jan 2019
+  * Lab: Defining and Calling a Function
+  * Lab: Recursive Function Exercise
+  * Introducing the Order Inquiry Application  (do this on your own, and ask questions on Thursday)
+  * Lab: Two Functions
+    * Add to the existing example under /php1/src/ModFunctions/runForms.php
 * For Tue 15 Jan 2019
   * Lab: Conditional If-ElseIf
   * Lab: Switch Construct
@@ -46,6 +55,23 @@ file:///D:/Repos/PHP-Fundamentals-I/Course_Materials/index.html#/5
     * Read the docs: http://php.net/manual/en/language.operators.bitwise.php
     * Go through the tutorial: https://www.w3resource.com/php/operators/bitwise-operators.php
 * PHP Examples: https://github.com/dbierer/classic_php_examples
+* Keyword `static` can be used to retain values when making recursive function calls
+    * If you want to parse a directory tree recursively, there is a class which does that:
+    * see: http://php.net/RecursiveDirectoryIterator
+```
+<?php
+
+$path = realpath('/etc');
+
+$objects = new RecursiveIteratorIterator(
+                new RecursiveDirectoryIterator($path),
+                RecursiveIteratorIterator::SELF_FIRST
+);
+foreach($objects as $name => $object){
+    // NOTE: each $object is an instance of SplFileInfo
+    echo "$name\n";
+}
+```
 
 ## Q & A
 Q: Can you provide an example of a string holding non-string data?
