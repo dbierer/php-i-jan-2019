@@ -4,7 +4,11 @@ file:///D:/Repos/PHP-Fundamentals-I/Course_Materials/index.html#/6
 
 ## TODO:
 * Q: Do you have an example of using `static` to parse a directory tree?
-* A:
+* A: See sample program in this repository: `sandbox/public/functions_recursive_parse_dir_tree.php`
+
+## Q & A
+* Q: Can you provide an example of a string holding non-string data?
+* A: See sample program in this repository: `sandbox/public/string_holding_binary.php`
 
 ## Homework
 * For Thu 17 Jan 2019
@@ -73,9 +77,6 @@ foreach($objects as $name => $object){
     echo "$name\n";
 }
 ```
-
-## Q & A
-Q: Can you provide an example of a string holding non-string data?
 
 ## ERRATA
 * file:///D:/Repos/PHP-Fundamentals-I/Course_Materials/index.html#/2/2: curly brace s/be on next line
