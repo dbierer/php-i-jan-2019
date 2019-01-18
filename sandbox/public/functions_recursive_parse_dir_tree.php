@@ -1,7 +1,11 @@
 <?php
+// NOTE: it would be better to use RecursiveDirectoryIterator (see docs for examples)
 function recursiveScan($dir, &$list = []) {
+	// we use "static" to "freeze" this variable between recursive calls
     static $list = [];
-    $files = glob($dir . '/*');
+    // glob() takes a regular expression as an argument
+    $path = str_replace(DIRECTORY_SEPARATOR . DIRECTORY_SEPARATOR, DIRECTORY_SEPARATOR, $dir . DIRECTORY_SEPARATOR . '*');
+    $files = glob($path);
     foreach ($files as $item) {
         $list[] = $item;
         if (is_dir($item)) {
