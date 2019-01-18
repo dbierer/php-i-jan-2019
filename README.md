@@ -1,8 +1,13 @@
 # PHP-I Jan 2019
 
-file:///D:/Repos/PHP-Fundamentals-I/Course_Materials/index.html#/6
+file:///D:/Repos/PHP-Fundamentals-I/Course_Materials/index.html#/7
+
+NOT WORKING: file:///D:/Repos/PHP-Fundamentals-I/Course_Materials/index.html#/6/14
 
 ## TODO:
+* Q: Do you have an example of reading a formatted stream?
+* A: Use `fscanf()` with a pattern which matches the proprietary data format
+
 * Q: Do you have an example of using `static` to parse a directory tree?
 * A: See sample program in this repository: `sandbox/public/functions_recursive_parse_dir_tree.php`
 
@@ -10,7 +15,16 @@ file:///D:/Repos/PHP-Fundamentals-I/Course_Materials/index.html#/6
 * Q: Can you provide an example of a string holding non-string data?
 * A: See sample program in this repository: `sandbox/public/string_holding_binary.php`
 
+* Q: PHP Libraries
+* A: See: https://packagist.org/
+
 ## Homework
+* For Sun 20 Jan 2019
+  * Lab: F-Type Functions
+  * Lab: file_get_contents()
+  * Lab: file_put_contents()
+  * Lab: Write Array Lab
+  * Lab: Read Directories
 * For Thu 17 Jan 2019
   * Lab: Defining and Calling a Function
   * Lab: Recursive Function Exercise
@@ -77,10 +91,13 @@ foreach($objects as $name => $object){
     echo "$name\n";
 }
 ```
+* File Operations
+    * `file()` command == `file_get_contents()` except it returns an array, one element per line
 
 ## ERRATA
 * file:///D:/Repos/PHP-Fundamentals-I/Course_Materials/index.html#/2/2: curly brace s/be on next line
 * file:///D:/Repos/PHP-Fundamentals-I/Course_Materials/index.html#/4/29: s/be `$astronaut` on the 1st line
+* file:///D:/Repos/PHP-Fundamentals-I/Course_Materials/index.html#/6/14: this example isn't working
 
 # VM Troubleshooting Guide
 
