@@ -2,8 +2,6 @@
 
 file:///D:/Repos/PHP-Fundamentals-I/Course_Materials/index.html#/7
 
-NOT WORKING: file:///D:/Repos/PHP-Fundamentals-I/Course_Materials/index.html#/6/14
-
 ## TODO:
 * Q: Do you have an example of reading a formatted stream?
 * A: Use `fscanf()` with a pattern which matches the proprietary data format
@@ -98,6 +96,22 @@ foreach($objects as $name => $object){
 * file:///D:/Repos/PHP-Fundamentals-I/Course_Materials/index.html#/2/2: curly brace s/be on next line
 * file:///D:/Repos/PHP-Fundamentals-I/Course_Materials/index.html#/4/29: s/be `$astronaut` on the 1st line
 * file:///D:/Repos/PHP-Fundamentals-I/Course_Materials/index.html#/6/14: this example isn't working
+```
+function getCount( $counter )
+{
+    if (!file_exists($counter)) touch($counter);
+    $fh = fopen( $counter, 'r+' );
+    //get the current count
+    $num = (int) fread( $fh, 10 );
+    // write new hit count back to the file
+    rewind($fh);
+    // we use pre-increment to write the incremented hit count
+    fwrite($fh, ++$num);
+    fclose( $fh );
+    return $num;
+}
+echo 'Hit count: ' . getCount('counter.txt') . PHP_EOL;
+```
 
 # VM Troubleshooting Guide
 
