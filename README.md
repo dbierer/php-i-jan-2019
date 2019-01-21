@@ -1,6 +1,7 @@
 # PHP-I Jan 2019
 
-file:///D:/Repos/PHP-Fundamentals-I/Course_Materials/index.html#/7
+file:///D:/Repos/PHP-Fundamentals-I/Course_Materials/index.html#/7/45
+NOTE TO SELF: get Olawale's recursive scan working!
 
 ## TODO:
 * Q: Do you have an example of reading a formatted stream?
@@ -17,6 +18,12 @@ file:///D:/Repos/PHP-Fundamentals-I/Course_Materials/index.html#/7
 * A: See: https://packagist.org/
 
 ## Homework
+* For Tue 22 Jan 2019
+  * Suggestion for these three labs: just use the same form, which has username, email and password + submit
+      * Lab: Embedded PHP
+      * Lab: PHP Form String
+      * Lab: Secure Input Handling
+      * Lab: Escaping Exercise
 * For Sun 20 Jan 2019
   * Lab: F-Type Functions
   * Lab: file_get_contents()
@@ -93,6 +100,8 @@ foreach($objects as $name => $object){
     * `file()` command == `file_get_contents()` except it returns an array, one element per line
 
 ## ERRATA
+* Setting up the Jenkins CI lab: The CheckStyle plug-in reached end-of-life. All functionality has been integrated into the Warnings Next Generation Plugin.
+* Same applies to `warnings` and `pmd` : integrated into warnings NG
 * file:///D:/Repos/PHP-Fundamentals-I/Course_Materials/index.html#/2/2: curly brace s/be on next line
 * file:///D:/Repos/PHP-Fundamentals-I/Course_Materials/index.html#/4/29: s/be `$astronaut` on the 1st line
 * file:///D:/Repos/PHP-Fundamentals-I/Course_Materials/index.html#/6/14: this example isn't working
@@ -112,6 +121,7 @@ function getCount( $counter )
 }
 echo 'Hit count: ' . getCount('counter.txt') . PHP_EOL;
 ```
+* file:///D:/Repos/PHP-Fundamentals-I/Course_Materials/index.html#/7/14: missing a PHP open tag!
 
 # VM Troubleshooting Guide
 
