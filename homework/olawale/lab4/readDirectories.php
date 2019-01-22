@@ -6,17 +6,15 @@
 Number of lines in the file
 **/
 
-define('CURRENT_DIR',__DIR__);
-function recursiveScan(string $p, &$dir = [])
+
+function recursiveScan(string $currentDir, &$dir = [])
 {
-  $scaneddir = scandir($p);
-  if(!empty($scaneddir)){
-    foreach ($scaneddir as $value) {
-	  $fn = CURRENT_DIR . DIRECTORY_SEPARATOR . $value;
+  $scanDir = scandir($currentDir);
+  if(!empty($scanDir)){
+    foreach ($scanDir as $value) {
+      // DB: this is really the only change that I made: I used the 1st argument $currentDir to build the path
+	  $fn = $currentDir . DIRECTORY_SEPARATOR . $value;
       if(is_dir($fn)  && $value != ".." && $value != "."){
-        // echo 'Here' . PHP_EOL;
-        // but ut us not working properly
-        // am missing sub directory name
         recursiveScan($fn, $dir);
       } else {
         $dir[] = $fn;
@@ -25,6 +23,9 @@ function recursiveScan(string $p, &$dir = [])
   }
   return $dir;
 }
-$workingdir = (__DIR__) . DIRECTORY_SEPARATOR;
-$recuresiveresult = recuresivescan($workingdir);
+
+$startDir = realpath(__DIR__ . '/..');
+$recuresiveresult = recursiveScan($startDir);
+
+echo "\nStarting Scan From: $startDir\n";
 print_r($recuresiveresult);

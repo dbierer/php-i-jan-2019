@@ -1,16 +1,19 @@
 # PHP-I Jan 2019
 
 file:///D:/Repos/PHP-Fundamentals-I/Course_Materials/index.html#/7/45
-NOTE TO SELF: get Olawale's recursive scan working!
 
 ## TODO:
+
+## Q & A
+* Q: Please have a look at `/homework/olawale/lab4/readDirctories.php` and get it working.
+* A: Done
+
 * Q: Do you have an example of reading a formatted stream?
 * A: Use `fscanf()` with a pattern which matches the proprietary data format
 
 * Q: Do you have an example of using `static` to parse a directory tree?
 * A: See sample program in this repository: `sandbox/public/functions_recursive_parse_dir_tree.php`
 
-## Q & A
 * Q: Can you provide an example of a string holding non-string data?
 * A: See sample program in this repository: `sandbox/public/string_holding_binary.php`
 
