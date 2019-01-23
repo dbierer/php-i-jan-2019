@@ -3,13 +3,17 @@
 file:///D:/Repos/PHP-Fundamentals-I/Course_Materials/index.html#/7/45
 
 ## TODO:
+* Q: Do you have an example of reading a formatted stream?
+* A: Use `fscanf()` with a pattern which matches the proprietary data format
+     * TODO
+
+* Q: Please find examples of HTML/PHP and PHP/HTML as per the latest labs
+* A:
+
 
 ## Q & A
 * Q: Please have a look at `/homework/olawale/lab4/readDirctories.php` and get it working.
 * A: Done
-
-* Q: Do you have an example of reading a formatted stream?
-* A: Use `fscanf()` with a pattern which matches the proprietary data format
 
 * Q: Do you have an example of using `static` to parse a directory tree?
 * A: See sample program in this repository: `sandbox/public/functions_recursive_parse_dir_tree.php`
@@ -101,6 +105,9 @@ foreach($objects as $name => $object){
 ```
 * File Operations
     * `file()` command == `file_get_contents()` except it returns an array, one element per line
+* Sending data via HTTP POST:
+    * php.ini setting `post_max_size` : http://php.net/manual/en/ini.core.php#ini.post-max-size
+* Database Rankings: https://db-engines.com/en/ranking
 
 ## ERRATA
 * Setting up the Jenkins CI lab: The CheckStyle plug-in reached end-of-life. All functionality has been integrated into the Warnings Next Generation Plugin.
@@ -125,6 +132,8 @@ function getCount( $counter )
 echo 'Hit count: ' . getCount('counter.txt') . PHP_EOL;
 ```
 * file:///D:/Repos/PHP-Fundamentals-I/Course_Materials/index.html#/7/14: missing a PHP open tag!
+* file:///D:/Repos/PHP-Fundamentals-I/Course_Materials/index.html#/8/2: dBase??? isn't an RDBMS
+* file:///D:/Repos/PHP-Fundamentals-I/Course_Materials/index.html#/8/12: Dr. Codd responsible for RDBMS not SQL
 
 # VM Troubleshooting Guide
 
