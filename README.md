@@ -25,6 +25,10 @@ file:///D:/Repos/PHP-Fundamentals-I/Course_Materials/index.html#/7/45
 * A: See: https://packagist.org/
 
 ## Homework
+* For Thu 24 Jan 2019
+  * Lab: SQL
+  * Lab: Putting It Together
+  * Docs on mysqli: http://php.net/manual/en/book.mysqli.php
 * For Tue 22 Jan 2019
   * Suggestion for these three labs: just use the same form, which has username, email and password + submit
       * Lab: Embedded PHP
