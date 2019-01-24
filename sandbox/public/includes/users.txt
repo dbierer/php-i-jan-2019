@@ -1,0 +1,4 @@
+javier  argonaut        PE	12.88
+hiroshi sculptor        JP	199.42
+robert  slacker         US	3.10
+luigi   florist         IT	999.876

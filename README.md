@@ -5,10 +5,11 @@ file:///D:/Repos/PHP-Fundamentals-I/Course_Materials/index.html#/7/45
 ## TODO:
 * Q: Do you have an example of reading a formatted stream?
 * A: Use `fscanf()` with a pattern which matches the proprietary data format
-     * TODO
+* A: See: `scanf_read_formatted_text.php` in `/sandbox/public`
 
 * Q: Please find examples of HTML/PHP and PHP/HTML as per the latest labs
-* A:
+* A: PHP + HTML: https://github.com/dbierer/classic_php_examples/blob/master/web/using_php_to_generate_html.php
+* A: HTML + PHP: https://github.com/dbierer/classic_php_examples/blob/master/web/form_submit_multi_array.php
 
 
 ## Q & A
@@ -94,7 +95,7 @@ file:///D:/Repos/PHP-Fundamentals-I/Course_Materials/index.html#/7/45
     * If you want to parse a directory tree recursively, there is a class which does that:
     * see: http://php.net/RecursiveDirectoryIterator
 ```
-<?php
+&lt;?php
 
 $path = realpath('/etc');
 
@@ -102,7 +103,7 @@ $objects = new RecursiveIteratorIterator(
                 new RecursiveDirectoryIterator($path),
                 RecursiveIteratorIterator::SELF_FIRST
 );
-foreach($objects as $name => $object){
+foreach($objects as $name =&gt; $object){
     // NOTE: each $object is an instance of SplFileInfo
     echo "$name\n";
 }
