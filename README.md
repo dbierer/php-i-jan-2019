@@ -95,7 +95,7 @@ ini_set('memory_limit', '500M');
     * If you want to parse a directory tree recursively, there is a class which does that:
     * see: http://php.net/RecursiveDirectoryIterator
 ```
-&lt;?php
+<?php
 
 $path = realpath('/etc');
 
@@ -103,7 +103,7 @@ $objects = new RecursiveIteratorIterator(
                 new RecursiveDirectoryIterator($path),
                 RecursiveIteratorIterator::SELF_FIRST
 );
-foreach($objects as $name =&gt; $object){
+foreach($objects as $name => $object) {
     // NOTE: each $object is an instance of SplFileInfo
     echo "$name\n";
 }
