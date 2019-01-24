@@ -80,8 +80,8 @@ file:///D:/Repos/PHP-Fundamentals-I/Course_Materials/index.html#/7/45
     * use `gc_collect_cycles()` to restore unset memory
     * `php.ini` directives: http://php.net/manual/en/ini.list.php
     * To override the memory limit temporarily:
-    ```
-    ini_set('memory_limit', '500M');
+```
+ini_set('memory_limit', '500M');
 ```
 * PHP Documentor Project: https://phpdoc.org/
 * Composer is a package manager for 3rd party open source PHP libraries: https://getcomposer.org/
