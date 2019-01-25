@@ -1,6 +1,7 @@
 # PHP-I Jan 2019
 
 file:///D:/Repos/PHP-Fundamentals-I/Course_Materials/index.html#/7/45
+TODO: formatting goes off later in this file!
 
 ## TODO:
 * Q: Do you have an example of reading a formatted stream?
