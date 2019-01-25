@@ -5,11 +5,11 @@ function getCount( $counter )
     $fh = fopen( $counter, 'r+' );
     //get the current count
     $num = (int) fread( $fh, 10 );
-    // write new hit count back to the file    
+    // write new hit count back to the file
     rewind($fh);
     // we use pre-increment to write the incremented hit count
     fwrite($fh, ++$num);
-    fclose( $fh );    
+    fclose( $fh );
     return $num;
 }
 echo 'Hit count: ' . getCount('counter.txt') . PHP_EOL;

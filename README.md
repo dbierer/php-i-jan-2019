@@ -12,7 +12,6 @@ TODO: formatting goes off later in this file!
 * A: PHP + HTML: https://github.com/dbierer/classic_php_examples/blob/master/web/using_php_to_generate_html.php
 * A: HTML + PHP: https://github.com/dbierer/classic_php_examples/blob/master/web/form_submit_multi_array.php
 
-
 ## Q & A
 * Q: Please have a look at `/homework/olawale/lab4/readDirctories.php` and get it working.
 * A: Done
