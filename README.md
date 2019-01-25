@@ -6,10 +6,11 @@ TODO: formatting goes off later in this file!
 ## TODO:
 * Q: Do you have an example of reading a formatted stream?
 * A: Use `fscanf()` with a pattern which matches the proprietary data format
-     * TODO
+* A: See: `scanf_read_formatted_text.php` in `/sandbox/public`
 
 * Q: Please find examples of HTML/PHP and PHP/HTML as per the latest labs
-* A:
+* A: PHP + HTML: https://github.com/dbierer/classic_php_examples/blob/master/web/using_php_to_generate_html.php
+* A: HTML + PHP: https://github.com/dbierer/classic_php_examples/blob/master/web/form_submit_multi_array.php
 
 
 ## Q & A
@@ -80,8 +81,8 @@ TODO: formatting goes off later in this file!
     * use `gc_collect_cycles()` to restore unset memory
     * `php.ini` directives: http://php.net/manual/en/ini.list.php
     * To override the memory limit temporarily:
-    ```
-    ini_set('memory_limit', '500M');
+```
+ini_set('memory_limit', '500M');
 ```
 * PHP Documentor Project: https://phpdoc.org/
 * Composer is a package manager for 3rd party open source PHP libraries: https://getcomposer.org/
@@ -103,7 +104,7 @@ $objects = new RecursiveIteratorIterator(
                 new RecursiveDirectoryIterator($path),
                 RecursiveIteratorIterator::SELF_FIRST
 );
-foreach($objects as $name => $object){
+foreach($objects as $name => $object) {
     // NOTE: each $object is an instance of SplFileInfo
     echo "$name\n";
 }
